@@ -3,8 +3,7 @@ import './App.css';
 import _ from 'lodash';
 import CharacterCard from './CharacterCard';
 
- 
-let message = 'Hello'
+ let message = 'Hello'
  
 const prepareStateFromWord = (given_word) => {
   let word = given_word.toUpperCase()
@@ -18,8 +17,7 @@ const prepareStateFromWord = (given_word) => {
     reset: 1
   }
 }
- 
-class App extends React.Component {
+ class App extends React.Component {
 
   state = prepareStateFromWord(message);
   reset =()=>{
@@ -78,5 +76,4 @@ class App extends React.Component {
     )
   }
 }
- 
-export default App
+ export default App
