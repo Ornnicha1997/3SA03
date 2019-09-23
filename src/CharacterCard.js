@@ -32,6 +32,5 @@ class CharacterCard extends React.Component {
         )
     }
 }
- 
-export default CharacterCard;
+ export default CharacterCard;
 

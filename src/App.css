@@ -7,7 +7,6 @@
   margin: 1em;
   user-select: none;
  }
- 
  .activeCard {
   color: orange;
   background:rgb(235, 224, 108);
