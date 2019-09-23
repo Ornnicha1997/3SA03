@@ -11,3 +11,9 @@
   color: orange;
   background:rgb(235, 224, 108);
  }
+ body {
+   background-image: url("067.png");
+   background-repeat: repeat-x;
+   background-position: right;
+   background-attachment: fixed;
+ }
