@@ -54,7 +54,24 @@ class App extends React.Component {
             />
           ))
         }
-        
+        <h2>Selected</h2>
+    
+        {
+          Array.from(this.state.guess).map((item, index) => (
+            <CharacterCard
+              value={item}
+              key={index}
+              activationHandler={this.activationHandler}
+            />
+          ))
+        }
+        <div>Attemp {this.state.attempt}</div>
+        {
+          this.state.completed && <h4>Complete</h4>
+        }
+        {
+          this.state.completed &&<button onClick={this.reset}>Reset</button>
+        }
         
       </div>
      
