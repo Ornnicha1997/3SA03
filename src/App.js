@@ -44,7 +44,22 @@ class App extends React.Component {
     return (
       <div>
         {
-          
-
-          
+          Array.from(this.state.chars).map((item, index) => (
+            <CharacterCard
+              value={item}
+              key={index}
+              attempt={this.state.attempt}
+              activationHandler={this.activationHandler}
+              reset = {this.state.reset}
+            />
+          ))
+        }
+        
+        
+      </div>
+     
+    )
+  }
+}
+ 
 export default App
